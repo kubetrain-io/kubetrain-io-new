@@ -1,7 +1,7 @@
 ---
-title: Achieve 2025
-description: Achieve 2025
-slug: achieve-2025
+title: Archive 2025
+description: Archive 2025
+slug: archive-2025
 layout: builder
 sections:
   - template: page-header
@@ -50,7 +50,7 @@ sections:
   - template: page-about-next-kubetrain
     title: "Want to be part of the next KubeTrain?"
     cta_text: "Get in Touch"
-    cta_link: "/contact/"
+    cta_link: "mailto:hello@kubetrain.io"
 
     items:
       - title: "Companies"

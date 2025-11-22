@@ -72,7 +72,7 @@ sections:
   - template: page-about-next-kubetrain
     title: "Want to be part of the next KubeTrain?"
     cta_text: "Get in Touch"
-    cta_link: "/contact/"
+    cta_link: "mailto:hello@kubetrain.io"
 
     items:
       - title: "Companies"
