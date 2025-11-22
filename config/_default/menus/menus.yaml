@@ -8,6 +8,9 @@ main:
   - name: Archive 2025
     url: "/archive-2025/"
     weight: 30
+  - name: Archive 2024
+    url: "/archive-2024/"
+    weight: 30
 
 main_footer:
 #  - name: Terms & Conditions

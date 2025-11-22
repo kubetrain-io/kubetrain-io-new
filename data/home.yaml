@@ -36,36 +36,36 @@ sponsor_section:
   sponsors:
     - tier: "Platinum"
       logo:
-        - "images/airlock-logo.png"
-        - "images/castai-logo.png"
+        - "images/sponsors/airlock-logo.png"
+        - "images/sponsors/castai-logo.png"
 
     - tier: "Gold"
       logo:
-        - "images/kubermatic-logo.png"
-        - "images/cloudnative-zurich-logo.png"
-        - "images/octopus-logo.png"
-        - "images/gogrow-company-logo.png"
+        - "images/sponsors/kubermatic-logo.png"
+        - "images/sponsors/cloudnative-zurich-logo.png"
+        - "images/sponsors/octopus-logo.png"
+        - "images/sponsors/gogrow-company-logo.png"
 
     - tier: "Silver"
       logo:
-        - "images/octopus-logo.png"
-        - "images/kubermatic-logo.png"
-        - "images/gogrow-company-logo.png"
-        - "images/cloudnative-zurich-logo.png"
+        - "images/sponsors/octopus-logo.png"
+        - "images/sponsors/kubermatic-logo.png"
+        - "images/sponsors/gogrow-company-logo.png"
+        - "images/sponsors/cloudnative-zurich-logo.png"
 
     - tier: "Bronze"
       logo:
-        - "images/kubermatic-logo.png"
-        - "images/gogrow-company-logo.png"
-        - "images/cloudnative-zurich-logo.png"
-        - "images/octopus-logo.png"
+        - "images/sponsors/kubermatic-logo.png"
+        - "images/sponsors/gogrow-company-logo.png"
+        - "images/sponsors/cloudnative-zurich-logo.png"
+        - "images/sponsors/octopus-logo.png"
 
     - tier: "Community"
       logo:
-        - "images/octopus-logo.png"
-        - "images/cloudnative-zurich-logo.png"
-        - "images/kubermatic-logo.png"
-        - "images/gogrow-company-logo.png"
+        - "images/sponsors/octopus-logo.png"
+        - "images/sponsors/cloudnative-zurich-logo.png"
+        - "images/sponsors/kubermatic-logo.png"
+        - "images/sponsors/gogrow-company-logo.png"
 
 memories_section:
   enable: true

@@ -38,12 +38,9 @@ sections:
   - template: page-achieve-gallery
     title: "Gallery"
     images:
-      - "images/memory-1.png"
-      - "images/memory-2.png"
-      - "images/memory-3.png"
-      - "images/memory-4.png"
-      - "images/memory-5.png"
-      - "images/memory-6.png"
+      - "images/archive-2024/memory-4.png"
+      - "images/archive-2024/memory-5.png"
+      - "images/archive-2024/memory-6.png"
   
   - template: sponsor-section
 
