@@ -1,4 +1,11 @@
-{{- with .Site.Data.home.sponsor_section }}
+{{- $sponsorData := .Site.Data.home.sponsor_section }}
+{{- if isset . "section" }}
+  {{/* Called from builder layout with section data */}}
+  {{- if .section.enable }}
+    {{- $sponsorData = .section }}
+  {{- end }}
+{{- end }}
+{{- with $sponsorData }}
 {{- if .enable }}
 <section class="sponsor-section">
     <div

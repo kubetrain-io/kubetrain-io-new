@@ -43,6 +43,28 @@ sections:
       - "images/archive-2025/memory-3.png"
   
   - template: sponsor-section
+    enable: true
+    title: "Our 2025 Sponsors"
+    description: >
+      KubeTrain 2025 was made possible by these amazing sponsors who supported our journey to KubeCon London.
+      Their belief in sustainable travel and community connection made this edition unforgettable.
+    
+    sponsors:
+      - tier: "Platinum"
+        logo:
+          - "images/sponsors/airlock-logo.png"
+
+      - tier: "Gold"
+        logo:
+          - "images/sponsors/kubermatic-logo.png"
+
+      - tier: "Silver"
+        logo:
+          - "images/sponsors/gogrow-company-logo.png"
+
+      - tier: "Community"
+        logo:
+          - "images/sponsors/cloudnative-zurich-logo.png"
 
   - template: page-about-next-kubetrain
     title: "Want to be part of the next KubeTrain?"

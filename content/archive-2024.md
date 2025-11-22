@@ -43,6 +43,30 @@ sections:
       - "images/archive-2024/memory-6.png"
   
   - template: sponsor-section
+    enable: true
+    title: "Our 2024 Sponsors"
+    description: >
+      KubeTrain 2024 was made possible by these amazing sponsors who supported our journey to KubeCon Paris.
+      Their belief in sustainable travel and community connection made this edition unforgettable.
+    
+    sponsors:
+      - tier: "Platinum"
+        logo:
+          - "images/sponsors/airlock-logo.png"
+
+      - tier: "Gold"
+        logo:
+          - "images/sponsors/kubermatic-logo.png"
+          - "images/sponsors/cloudnative-zurich-logo.png"
+
+      - tier: "Silver"
+        logo:
+          - "images/sponsors/octopus-logo.png"
+          - "images/sponsors/gogrow-company-logo.png"
+
+      - tier: "Community"
+        logo:
+          - "images/sponsors/cloudnative-zurich-logo.png"
 
   - template: page-about-next-kubetrain
     title: "Want to be part of the next KubeTrain?"

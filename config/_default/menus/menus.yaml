@@ -10,7 +10,7 @@ main:
     weight: 30
   - name: Archive 2024
     url: "/archive-2024/"
-    weight: 30
+    weight: 40
 
 main_footer:
 #  - name: Terms & Conditions
