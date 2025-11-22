@@ -2,28 +2,28 @@
 hero_section:
   enable: true
   date: 22 March 2026
-  title: 'Travel to <span class="title-primary font-bold">Kubcon</span>. <br>Together Sustainably'
+  title: 'Travel to <span class="title-primary font-bold">KubeCon</span>. <br>Together Sustainably'
   description: >
-    Join the community on a shared train journey to Kubcon Amsterdam connecting cloud-native enthusiasts and friends along the way. 
+    Join the community on a shared train journey to KubeCon Amsterdam connecting cloud-native enthusiasts and friends along the way. 
   button_primary:
     label: "Join the Ride"
-    url: "https://kubetrain.io/"
+    url: "http://tickets.kubetrain.io/"
   button_secondary:
     label: "Become a Sponsor"
-    url: "https://kubetrain.io/"
+    url: "mailto:sponsors@kubetrain.io"
   timetable:
     title: "DEPARTURE"
     date: "SUNDAY 22, MARCH 2026"
     departures:
-      - time: "08:58"
+      - time: "08:59"
         from: "ZÜRICH"
         to: "AMSTERDAM"
-      - time: "15:22"
+      - time: "15:17"
         from: "PARIS"
         to: "AMSTERDAM"
-      - time: "13:01"
-        from: "LONDON"
-        to: "AMSTERDAM"
+#      - time: "13:01"
+#        from: "LONDON"
+#        to: "AMSTERDAM"
 
 sponsor_section:
   enable: true
@@ -69,7 +69,7 @@ sponsor_section:
 
 memories_section:
   enable: true
-  title: "KubTrain Memories"
+  title: "KubeTrain Memories"
   description: >
     Before the talks, the booths, and the coffee queues — the KubeTrain journey already begins. Here's a glimpse into our previous rides to KubeCon, where new friendships and ideas were born along the way.
   
