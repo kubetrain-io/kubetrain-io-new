@@ -1,0 +1,48 @@
+{{ define "main" }}
+<div class="main overflow-hidden">
+  {{ $ctx := . }}
+  {{ with .Params.sections }}
+  {{ range . }}
+  {{ $partial := printf "sections/%s.html" . }} {{/* RELATIF ke _partials */}}
+  {{ if templates.Exists (printf "_partials/%s" $partial) }}
+  {{ partial $partial $ctx }} {{/* Panggil partial */}}
+  {{ else }}
+  {{ warnf "Partial %q tidak ditemukan" $partial }}
+  {{ end }}
+  {{ end }}
+  {{ end }}
+</div>
+<script>
+  function fitLetterSpacing() {
+    const parent = document.getElementById("spacingTextWrapper");
+    const text = document.getElementById("autoSpacingText");
+
+    // Reset letter spacing dulu
+    text.style.letterSpacing = "0px";
+
+    const parentWidth = parent.clientWidth;
+    const textWidth = text.scrollWidth;
+
+    // Selisih ruang yang harus diisi
+    const extraSpace = parentWidth - textWidth;
+
+    if (extraSpace <= 0) return;
+
+    // Jumlah spasi antar huruf = jumlah karakter - 1
+    const charCount = text.innerText.length - 1;
+
+    if (charCount <= 0) return;
+
+    // Hitung letter-spacing yang dibutuhkan
+    const letterSpacing = extraSpace / charCount;
+
+    text.style.letterSpacing = `${letterSpacing}px`;
+  }
+
+  // Jalankan saat load
+  window.addEventListener("load", fitLetterSpacing);
+
+  // Jalankan juga saat resize
+  window.addEventListener("resize", fitLetterSpacing);
+</script>
+{{ end }}

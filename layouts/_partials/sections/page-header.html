@@ -1,0 +1,34 @@
+{{- $site := .Site }}
+{{- $section := .section }}
+{{- with $section }}
+<section class="hero-section">
+    {{- $bg := "" -}}
+    {{- $bg_sm := "" -}}
+    {{- if .image -}}
+    {{- $imgPath := printf "assets/%s" .image -}}
+    {{- if fileExists $imgPath -}}
+    {{- with resources.Get .image -}}
+    {{- $resized := .Resize "2500x webp" -}}
+    {{- $resized_sm := .Resize "700x webp" -}}
+    {{- $bg = $resized.RelPermalink -}}
+    {{- $bg_sm = $resized_sm.RelPermalink -}}
+    {{- end -}}
+    {{- end -}}
+    {{- end -}}
+    <div class="bg-center bg-cover bg-no-repeat bg-black bg-[url('{{ $bg_sm }}')] lg:bg-[url('{{ $bg }}')]">
+        <div class="bg-linear-to-b from-transparent via-black/95 via-80% to-black to-90%">
+            <div
+                class="container w-full lg:max-w-screen-lg xl:max-w-screen-xl mx-auto py-20 md:py-25 lg:py-20 xl:py-25 px-5 xl:px-0 min-h-[618px] flex items-end">
+                <header>
+                    {{- if .title }}
+                    <h1
+                        class="{{ .class }} text-[6.25rem] md:text-[10.563rem] lg:text-[8.438rem] xl:text-[10.563rem] text-white font-normal font-headline leading-[0.85] md:leading-[0.85] lg:leading-[0.85] xl:leading-[0.85]">
+                        {{ .title | safeHTML }}
+                    </h1>
+                    {{- end }}
+                </header>
+            </div>
+        </div>
+    </div>
+</section>
+{{- end }}

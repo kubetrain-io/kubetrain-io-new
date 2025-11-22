@@ -1,0 +1,107 @@
+{{- with .Site.Data.home.sponsor_section }}
+{{- if .enable }}
+<section class="sponsor-section">
+    <div
+        class="container w-full lg:max-w-screen-lg xl:max-w-screen-xl mx-auto py-20 md:py-25 lg:py-20 xl:py-25 px-5 xl:px-0">
+        <header class="text-center mb-10">
+            {{ with .title }}
+            <h2
+                class="text-3xl md:text-[3.375rem] lg:text-[2.688rem] xl:text-[3.375rem] text-black font-heading font-semibold leading-[1.12] md:leading-[1.12] lg:leading-[1.12] xl:leading-[1.12] mb-5">
+                {{ . | safeHTML }}</h2>
+            {{ end }}
+            {{ with .description }}
+            <div
+                class="lg:w-3/5 mx-auto text-gray-700 text-base xl:text-lg leading-[1.6] md:leading-[1.6] lg:leading-[1.6] xl:leading-[1.6]">
+                <p>{{ . | safeHTML }}</p>
+            </div>
+            {{ end }}
+        </header>
+        <div class="mb-12 md:mb-15 lg:mb-12 xl:mb-15 space-y-5 lg:hidden">
+            {{ range $index, $sponsors := .sponsors }}
+            <div class="border border-gray-300">
+                <div class="flex items-center p-5 bg-secondary">
+                    <span class="text-xl lg:text-base xl:text-xl text-black font-body font-semibold">{{
+                        .tier }}</span>
+                </div>
+                <div>
+                    {{ range $i, $logo := .logo }}
+                    <div class="border-t border-gray-300 p-5">
+                        <div class="{{ if eq $index 0 }}w-3/4{{ end }}">
+                            {{- if fileExists (add `assets/` (string .)) }}
+                            {{ with resources.Get . }}
+                            {{ with .Resize (printf "%dx%d webp" .Width .Height) }}
+                            <img class="w-auto h-auto" src="{{ .RelPermalink }}" width="{{ .Width }}"
+                                height="{{ .Height }}" alt="cover">
+                            {{ end }}
+                            {{ end }}
+                            {{- end }}
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        <div class="mb-12 md:mb-15 lg:mb-12 xl:mb-15 hidden lg:block">
+            {{ range $index, $sponsors := .sponsors }}
+            <div
+                class="flex border border-b-0 last:border-b border-gray-300 {{ if eq $index 0 }}min-h-[188px] {{ else }}min-h-[108px]{{ end }}">
+                <div class="w-[15%] flex items-center p-5">
+                    <span class="text-base md:text-xl lg:text-base xl:text-xl text-black font-body font-semibold">{{
+                        .tier }}</span>
+                </div>
+                <div class="flex-1 grid grid-cols-12">
+                    {{ range .logo }}
+                    <div
+                        class="{{ if eq $index 0 }}col-span-6 {{ else }}col-span-3 lg:px-4{{ end }} flex justify-center items-center border-l border-gray-300">
+                        <div>
+                            {{- if fileExists (add `assets/` (string .)) }}
+                            {{ with resources.Get . }}
+                            {{ with .Resize (printf "%dx%d webp" .Width .Height) }}
+                            <img class="w-auto h-auto" src="{{ .RelPermalink }}" width="{{ .Width }}"
+                                height="{{ .Height }}" alt="cover">
+                            {{ end }}
+                            {{ end }}
+                            {{- end }}
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        <div
+            class="relative bg-secondary rounded-[10px] isolate px-5 lg:px-16 xl:px-20 py-15 lg:py-12 xl:py-15">
+            <div class="text-center mb-7.5">
+                <h2
+                    class="text-3xl md:text-[2.5rem] lg:text-[2rem] xl:text-[2.5rem] font-heading font-semibold text-black leading-[1.12] md:leading-[1.12] lg:leading-[1.12] xl:leading-[1.12] mb-5">
+                    Want to Sponsor KubeTrain 2026?
+                </h2>
+                <div class="lg:w-[43%] mx-auto">
+                    <p class="font-body font-normal text-base xl:text-lg leading-[1.6] xl:leading-[1.6] text-[#374151]">
+                        Sponsoring KubeTrain means backing a cause that connects people and making traveling more
+                        sustainable.
+                    </p>
+                </div>
+            </div>
+            <div class="flex justify-center mb-8 lg:mb-0">
+                <a href="#"
+                    class="flex justify-center items-center gap-[3px] px-[47px] pt-4.5 pb-5 w-full lg:w-[332px] h-[61px] lg:h-[63px] bg-[#FF044B] rounded-[50px]">
+                    <span class="text-lg lg:text-base xl:text-xl font-body font-bold text-white">
+                        Sponsoring Prospecture
+                    </span>
+                </a>
+            </div>
+
+            <!-- QUOTE CARD ROTATED -->
+            <div
+                class="lg:absolute lg:left-[78%] lg:-bottom-4.5 mx-auto w-[201px] h-[121px] flex justify-center items-center px-[20px] gap-[10px] bg-white rounded-[20px] rotate-[-7deg] z-10">
+                <p class="w-[161px] h-[81px] font-body font-semibold text-lg leading-[150%] text-black text-center">
+                    “Good vibes. <br>Great community. <br>Greener travel.”
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+{{- end }}
+{{- end }}

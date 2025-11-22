@@ -1,0 +1,106 @@
+### Hero section [ hero-section ]
+hero_section:
+  enable: true
+  date: 22 March 2026
+  title: 'Travel to <span class="title-primary font-bold">Kubcon</span>. <br>Together Sustainably'
+  description: >
+    Join the community on a shared train journey to Kubcon Amsterdam connecting cloud-native enthusiasts and friends along the way. 
+  button_primary:
+    label: "Join the Ride"
+    url: "https://kubetrain.io/"
+  button_secondary:
+    label: "Become a Sponsor"
+    url: "https://kubetrain.io/"
+  timetable:
+    title: "DEPARTURE"
+    date: "SUNDAY 22, MARCH 2026"
+    departures:
+      - time: "08:58"
+        from: "ZÜRICH"
+        to: "AMSTERDAM"
+      - time: "15:22"
+        from: "PARIS"
+        to: "AMSTERDAM"
+      - time: "13:01"
+        from: "LONDON"
+        to: "AMSTERDAM"
+
+sponsor_section:
+  enable: true
+  title: "Our Sponsors"
+  description: >
+    KubeTrain wouldn’t roll without the awesome companies and communities that believe in
+    sustainable travel and the power of connection. Their support helps make train journeys to
+    KubeCon affordable, fun, and unforgettable for everyone.
+  
+  sponsors:
+    - tier: "Platinum"
+      logo:
+        - "images/airlock-logo.png"
+        - "images/castai-logo.png"
+
+    - tier: "Gold"
+      logo:
+        - "images/kubermatic-logo.png"
+        - "images/cloudnative-zurich-logo.png"
+        - "images/octopus-logo.png"
+        - "images/gogrow-company-logo.png"
+
+    - tier: "Silver"
+      logo:
+        - "images/octopus-logo.png"
+        - "images/kubermatic-logo.png"
+        - "images/gogrow-company-logo.png"
+        - "images/cloudnative-zurich-logo.png"
+
+    - tier: "Bronze"
+      logo:
+        - "images/kubermatic-logo.png"
+        - "images/gogrow-company-logo.png"
+        - "images/cloudnative-zurich-logo.png"
+        - "images/octopus-logo.png"
+
+    - tier: "Community"
+      logo:
+        - "images/octopus-logo.png"
+        - "images/cloudnative-zurich-logo.png"
+        - "images/kubermatic-logo.png"
+        - "images/gogrow-company-logo.png"
+
+memories_section:
+  enable: true
+  title: "KubTrain Memories"
+  description: >
+    Before the talks, the booths, and the coffee queues — the KubeTrain journey already begins. Here's a glimpse into our previous rides to KubeCon, where new friendships and ideas were born along the way.
+  
+  images:
+    - "images/memory-1.png"
+    - "images/memory-2.png"
+    - "images/memory-3.png"
+    - "images/memory-4.png"
+    - "images/memory-5.png"
+    - "images/memory-6.png"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

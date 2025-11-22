@@ -1,0 +1,18 @@
+{{- $site := .Site }}
+{{- $section := .section }}
+{{ with $section }}
+<section class="about-started-section">
+    <div
+        class="container w-full lg:max-w-screen-lg xl:max-w-screen-xl mx-auto py-25 px-5 xl:px-0">
+        <div class="lg:w-[68%] mx-auto lg:text-center">
+            <h2
+                class="text-4xl text-black font-semibold font-heading leading-[1.12] mb-5">
+                {{ .title }}</h2>
+            <div
+                class="text-2xl text-gray-800 font-body font-medium leading-[1.6]">
+                {{ .body | markdownify }}
+            </div>
+        </div>
+    </div>
+</section>
+{{- end }}

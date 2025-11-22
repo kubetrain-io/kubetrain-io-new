@@ -1,0 +1,8 @@
+header:
+  title: Kubetrain
+  logo: images/logo.png
+description: kubetrain
+# Your favicon must be located in the assets/images folder
+favicon: images/favicon.png
+author: kubetrain
+is_download: true

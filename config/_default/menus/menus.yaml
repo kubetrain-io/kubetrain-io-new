@@ -1,0 +1,18 @@
+main:
+  - name: Home
+    url: "/"
+    weight: 10
+  - name: About Us
+    url: "/about/"
+    weight: 20
+  - name: Achieve 2025
+    url: "/achieve-2025/"
+    weight: 30
+
+main_footer:
+  - name: Terms & Conditions
+    url: "/terms-and-conditions/"
+    weight: 10
+  - name: Privacy Policy
+    url: "/privacy-policy/"
+    weight: 20
