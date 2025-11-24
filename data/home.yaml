@@ -34,11 +34,15 @@ sponsor_section:
     KubeCon affordable, fun, and unforgettable for everyone.
   
   sponsors:
-    - tier: "Platinum"
-      logos: []
-
-    - tier: "Gold"
-      logos: []
+#    - tier: "Platinum"
+#      logos:
+#        - image: "images/sponsors/become_a_sponsor.png"
+#          url: "kubetrain.io/sponsors"
+#
+#    - tier: "Gold"
+#      logos:
+#        - image: "images/sponsors/become_a_sponsor.png"
+#          url: "kubetrain.io/sponsors"
 
     - tier: "Silver"
       logos:

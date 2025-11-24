@@ -1,7 +1,7 @@
 {{- define "main" }}
 <div class="main builder-page">
     {{- range $section := .Params.sections }}
-    {{- $include_dict := dict "section" $section "Site" $.Site }}
+    {{- $include_dict := dict "section" $section "Site" $.Site "Page" $ }}
     {{- $component := print "sections/" $section.template ".html" }}
     {{ partial $component $include_dict }}
     {{- end }}

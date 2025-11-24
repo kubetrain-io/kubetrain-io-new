@@ -1,4 +1,24 @@
-{{- with .Site.Data.home.sponsor_section }}
+{{- $sponsor_data := .Site.Data.home.sponsor_section }}
+{{- if isset . "section" }}
+  {{- if .Page }}
+    {{- if eq .Page.Slug "archive-2024" }}
+      {{- $sponsor_data = index .Site.Data "archive-2024" "sponsor_section" }}
+    {{- else if eq .Page.Slug "archive-2025" }}
+      {{- $sponsor_data = index .Site.Data "archive-2025" "sponsor_section" }}
+    {{- else }}
+      {{- $sponsor_data = .section }}
+    {{- end }}
+  {{- else }}
+    {{- $sponsor_data = .section }}
+  {{- end }}
+{{- else if isset . "Page" }}
+  {{- if eq .Page.Slug "archive-2024" }}
+    {{- $sponsor_data = index .Site.Data "archive-2024" "sponsor_section" }}
+  {{- else if eq .Page.Slug "archive-2025" }}
+    {{- $sponsor_data = index .Site.Data "archive-2025" "sponsor_section" }}
+  {{- end }}
+{{- end }}
+{{- with $sponsor_data }}
 {{- if .enable }}
 <section class="sponsor-section">
     <div
@@ -24,11 +44,11 @@
                         .tier }}</span>
                 </div>
                 <div>
-                    {{ range $i, $logo := .logo }}
+                    {{ range $i, $logo := .logos }}
                     <div class="border-t border-gray-300 p-5">
                         <div class="{{ if eq $index 0 }}w-3/4{{ end }}">
-                            {{- if fileExists (add `assets/` (string .)) }}
-                            {{ with resources.Get . }}
+                            {{- if fileExists (add `assets/` (string .image)) }}
+                            {{ with resources.Get .image }}
                             {{ with .Resize (printf "%dx%d webp" .Width .Height) }}
                             <img class="w-auto h-auto" src="{{ .RelPermalink }}" width="{{ .Width }}"
                                 height="{{ .Height }}" alt="cover">
@@ -86,7 +106,7 @@
                 </div>
             </div>
             <div class="flex justify-center mb-8 lg:mb-0">
-                <a href="#"
+                <a href="https://kubetrain.io/sponsors"
                     class="flex justify-center items-center gap-[3px] px-[47px] pt-4.5 pb-5 w-full lg:w-[332px] h-[61px] lg:h-[63px] bg-[#FF044B] rounded-[50px]">
                     <span class="text-lg lg:text-base xl:text-xl font-body font-bold text-white">
                         Sponsoring Prospecture

@@ -1,0 +1,52 @@
+sponsor_section:
+  enable: true
+  title: "Our 2025 Sponsors"
+  description: >
+    KubeTrain 2025 was made possible by these amazing sponsors who supported our journey to KubeCon London.
+    Their belief in sustainable travel and community connection made this edition unforgettable.
+  
+  sponsors:
+    - tier: "Platinum"
+      logos:
+        - image: "images/sponsors/dynatrace.png"
+          url: "https://www.dynatrace.com/"
+
+    - tier: "Gold"
+      logos:
+        - image: "images/sponsors/isovalent.png"
+          url: "https://isovalent.com/"
+
+    - tier: "Silver"
+      logos:
+        - image: "images/sponsors/airlock-logo.png"
+          url: "https://airlock.com/"
+        - image: "images/sponsors/vshn.png"
+          url: "https://vshn.ch/"
+
+    - tier: "Bronze"
+      logos:
+        - image: "images/sponsors/fikaworks.png"
+          url: "https://fika.works/"
+        - image: "images/sponsors/cloudnative-zurich-logo.png"
+          url: "https://cloudnativezurich.ch/"
+        - image: "images/sponsors/re_cinq.png"
+          url: "https://re-cinq.com/"
+        - image: "images/sponsors/cncf.png"
+          url: "https://cncf.io/"
+
+    - tier: "Community"
+      logos:
+        - image: "images/sponsors/amsterdam.dev.png"
+          url: "https://www.meetup.com/amsterdam-dev/" 
+        - image: "images/sponsors/gogrow-company-logo.png"
+          url: "https://thegogrow.ch/"
+        - image: "images/sponsors/paris.dev.png"
+          url: "https://www.meetup.com/paris-dev/" 
+        - image: "images/sponsors/swiss_cloud_native_day.png"
+          url: "https://cloudnativeday.ch/"
+        - image: "images/sponsors/cns_munich.png" 
+          url: "https://cloudnativesummit.de/"
+        - image: "images/sponsors/kcd-uk-logo-idea.png"
+          url: "https://community.cncf.io/kcd-uk/"
+        - image: "images/sponsors/kcd_austria.png" 
+          url: "https://kcdaustria.at/"

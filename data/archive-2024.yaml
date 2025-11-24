@@ -1,0 +1,43 @@
+sponsor_section:
+  enable: true
+  title: "Our 2024 Sponsors"
+  description: >
+    KubeTrain 2024 was made possible by these amazing sponsors who supported our journey to KubeCon Paris.
+    Their belief in sustainable travel and community connection made this edition unforgettable.
+  
+  sponsors:
+    - tier: "Sponsors"
+      logos:
+        - image: "images/sponsors/algolia.png"
+          url: "https://algolia.com/"
+        - image: "images/sponsors/cloudnative-zurich-logo.png"
+          url: "https://cloudnativezurich.ch/"
+        - image: "images/sponsors/dynatrace.png"
+          url: "https://www.dynatrace.com/"
+        - image: "images/sponsors/isovalent.png"
+          url: "https://isovalent.com/"
+        - image: "images/sponsors/kubermatic-logo.png"
+          url: "https://www.kubermatic.com/"
+        - image: "images/sponsors/microsoft.png"
+          url: "https://microsoft.com/"
+        - image: "images/sponsors/postfinance.png"
+          url: "https://postfinance.ch/"
+        - image: "images/sponsors/quickwit.png"
+          url: "https://quickwit.io/"
+        - image: "images/sponsors/vshn.png"
+          url: "https://vshn.ch/"
+
+    - tier: "Community"
+      logos:
+        - image: "images/sponsors/leafcloud.png"
+          url: "https://www.leaf.cloud/"
+        - image: "images/sponsors/fikaworks.png"
+          url: "https://fika.works/"
+        - image: "images/sponsors/hashicorp.png"
+          url: "https://hashicorp.com/"
+        - image: "images/sponsors/puzzle.png"
+          url: "https://puzzle.ch/"
+        - image: "images/sponsors/amsterdam.dev.png"
+          url: "https://www.meetup.com/amsterdam-dev/" 
+        - image: "images/sponsors/paris.dev.png"
+          url: "https://www.meetup.com/paris-dev/" 
