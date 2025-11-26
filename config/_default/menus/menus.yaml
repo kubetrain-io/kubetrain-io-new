@@ -5,17 +5,22 @@ main:
   - name: About Us
     url: "/about/"
     weight: 20
-  - name: Archive 2025
-    url: "/archive-2025/"
+  - name: Archive
+    url: "/archive/"
     weight: 30
-  - name: Archive 2024
+  - name: "2024"
+    parent: Archive
     url: "/archive-2024/"
-    weight: 40
+    weight: 10
+  - name: "2025"
+    parent: Archive
+    url: "/archive-2025/"
+    weight: 20
 
 main_footer:
-#  - name: Terms & Conditions
-#    url: "/terms-and-conditions/"
-#    weight: 10
+  # - name: Terms & Conditions
+  #   url: "/terms-and-conditions/"
+  #   weight: 10
   - name: Privacy Policy
     url: "/privacy-policy/"
     weight: 20
