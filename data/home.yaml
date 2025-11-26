@@ -18,12 +18,12 @@ hero_section:
       - time: "08:59"
         from: "ZÜRICH"
         to: "AMSTERDAM"
+      - time: "13:01"
+        from: "LONDON"
+        to: "AMSTERDAM"
       - time: "15:17"
         from: "PARIS"
         to: "AMSTERDAM"
-#      - time: "13:01"
-#        from: "LONDON"
-#        to: "AMSTERDAM"
 
 sponsor_section:
   enable: true
