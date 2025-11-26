@@ -64,28 +64,51 @@
         </div>
         <div class="mb-12 md:mb-15 lg:mb-12 xl:mb-15 hidden lg:block">
             {{ range $index, $sponsors := .sponsors }}
-            <div
-                class="flex border border-b-0 last:border-b border-gray-300 {{ if eq $index 0 }}min-h-[188px] {{ else }}min-h-[108px]{{ end }}">
-                <div class="w-[15%] flex items-center p-5">
-                    <span class="text-base md:text-xl lg:text-base xl:text-xl text-black font-body font-semibold">{{
-                        .tier }}</span>
+            {{ $logoCount := len .logos }}
+
+            <div class="flex border border-b-0 last:border-b border-gray-300">
+                <div class="w-[15%] flex items-center p-5 border-r border-gray-300">
+                    <span class="text-base md:text-xl lg:text-base xl:text-xl text-black font-body font-semibold">
+                        {{ .tier }}
+                    </span>
                 </div>
+
                 <div class="flex-1 grid grid-cols-12">
-                    {{ range .logos }}
-                    <div
-                        class="{{ if eq $index 0 }}col-span-6 {{ else }}col-span-3 lg:px-4{{ end }} flex justify-center items-center border-l border-gray-300">
-                        <div>
-                            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">
-                                {{- if fileExists (add `assets/` (string .image)) }}
-                                {{ with resources.Get .image }}
+                    {{ range $i, $logo := .logos }}
+
+                    {{/* Tentukan jumlah kolom per row */}}
+                    {{ $rowSize := cond (le $logoCount 2) 2 4 }}
+
+                    {{/* Hitung index awal row terakhir */}}
+                    {{ $lastRowStart := mul (div (sub $logoCount 1) $rowSize) $rowSize }}
+
+                    <div class="
+                            {{ if le $logoCount 2 }}
+                                col-span-6 lg:h-[188px]
+                                {{ if eq (mod (add $i 1) 2) 0 }}border-0{{ else }}border-r border-gray-300{{ end }}
+                            {{ else }}
+                                col-span-3 lg:h-[108px]
+                                {{ if eq (mod (add $i 1) 4) 0 }}border-0{{ else }}border-r border-gray-300{{ end }}
+                            {{ end }}
+
+                            {{ if lt $i $lastRowStart }} border-b border-gray-300 {{ end }}
+
+                            lg:px-4.5 lg:py-3.5
+                        ">
+
+                        <div class="box-border h-full">
+                            <a class="h-full flex justify-center items-center" href="{{ $logo.url }}" target="_blank" rel="noopener noreferrer">
+                                {{- if fileExists (add `assets/` (string $logo.image)) }}
+                                {{ with resources.Get $logo.image }}
                                 {{ with .Resize (printf "%dx%d webp" .Width .Height) }}
-                                <img class="w-auto h-auto" src="{{ .RelPermalink }}" width="{{ .Width }}"
-                                    height="{{ .Height }}" alt="cover">
+                                <img class="max-h-full object-contain w-auto" src="{{ .RelPermalink }}"
+                                    width="{{ .Width }}" height="{{ .Height }}" alt="cover">
                                 {{ end }}
                                 {{ end }}
                                 {{- end }}
                             </a>
                         </div>
+
                     </div>
                     {{ end }}
                 </div>
