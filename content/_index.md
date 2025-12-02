@@ -1,6 +1,6 @@
 ---
 title: Homepage
-description: homepage description
+description: Travel to KubeCon by Train! 🚂
 sections:
   - hero-section
   - sponsor-section
