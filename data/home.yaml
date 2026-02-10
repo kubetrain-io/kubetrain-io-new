@@ -80,6 +80,10 @@ sponsor_section:
           url: "https://thegogrow.ch/"
         - image: "images/sponsors/rocketengineers.png"
           url: "https://rocketengineers.io/"
+        - image: "images/sponsors/fikaworks.png"
+          url: "https://fika.works/"
+        - image: "images/sponsors/kundolabs.png"
+          url: "https://kundolabs.com/"
 
 memories_section:
   enable: true
