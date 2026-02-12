@@ -61,6 +61,8 @@ sponsor_section:
       logos:
         - image: "images/sponsors/cloudnative-zurich-logo.png"
           url: "https://cloudnativezurich.ch/"
+        - image: "images/sponsors/komodor.png"
+          url: "https://komodor.com/"
         - image: "images/sponsors/re_cinq.png"
           url: "https://re-cinq.com/"
         - image: "images/sponsors/meltcloud.png"
