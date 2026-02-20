@@ -50,6 +50,8 @@ sponsor_section:
           url: "https://airlock.com/"
         - image: "images/sponsors/castai-logo.png"
           url: "https://cast.ai/book-a-demo/?ref_id=289"
+        - image: "images/sponsors/dynatrace.png"
+          url: "https://dynatrace.com/"
         - image: "images/sponsors/isovalent.png"
           url: "https://isovalent.com/"
         - image: "images/sponsors/kubermatic-logo.png"
