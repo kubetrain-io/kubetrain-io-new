@@ -80,6 +80,8 @@ sponsor_section:
       logos:
         - image: "images/sponsors/amsterdam.dev.png"
           url: "https://www.meetup.com/amsterdam-dev/" 
+        - image: "images/sponsors/cns_munich.png"
+          url: "https://www.cnsmunich.com/" 
         - image: "images/sponsors/gogrow-company-logo.png"
           url: "https://thegogrow.ch/"
         - image: "images/sponsors/rocketengineers.png"
